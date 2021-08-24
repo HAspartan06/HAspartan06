@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .gmail{
+            position: relative;
+            bottom: 2px;
+        }
+        p{
+            display: inline;
+            font-size: 17px;
+        }
+        .images{
+            position: relative;
+            bottom: 2px;
+        }
+        .profile{
+            position: relative;
+            bottom: 2px;
+        }
+        .top-line{
+            max-width: 200px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            top: 18px;
+            right: 18px;
+            float: right;
+        }
+        .gmail-p{
+            word-spacing: 7px;
+        }
+        .google-img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 67px;
+            left: 50%;
+            right: 50%;
+        }
+        .searchbar {
+            display: flex;
+            align-items: center;
+            border: 1px solid lightgray;   
+            border-radius: 35px;
+            position: absolute;
+            left: 390px;
+            top: 190px;
+            padding: 8px 14px;
+            max-width: 582px;
+            width: 100%;
+            justify-content: space-between;
+        }
+        input {
+            border: hidden;
+            width: 98%;
+            border: none;
+            margin: 0px 10px 0px 10px ;
+            outline: none;
+        }
+        .searchbtn{
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+            max-width: 284px;
+            left: 545px;
+            width: 100%;
+            top: 265px;
+        }
+        .google-search, .feeling{
+            font-size: 15px;
+            cursor: pointer;
+            font-family: 'Nunito', sans-serif;
+            /* letter-spacing: 0.9px; */
+        }
+        #google-search, #feeling{
+            padding: 5px 15px 2px 15px;
+            background-color: rgb(247, 247, 247);
+        }
+    </style>
+</head>
+<body>
+    <div class="top-line">
+        <div class="gmail-p">
+    <p class="gmail">Gmail</p>
+    <p class="images">Images</p>
+    </div>
+    <span class="material-icons">
+        apps
+    </span>
+    <img class="profile" src="https://1.bp.blogspot.com/-8JbFAkI-ALc/YOlcU-Xjx0I/AAAAAAAADQk/e805NIzTMkMqqaXpOHUa3vJdkpGRmQ_vwCLcBGAsYHQ/s320/profile.jpeg" width="30" style="border-radius: 50%;" alt="profile image">
+    </div>
+    <div class="google-img">
+        <img src="https://1.bp.blogspot.com/-3SUF9t4X8is/YOlcUot3pHI/AAAAAAAADQc/cUNc1g604IQuhsI6wBBIELN8MhVvE3bXQCLcBGAsYHQ/s0/googleimg.PNG" width="528px" alt="Google image">
+    </div>
+    <div class="searchbar">
+        <span id="search" class="material-icons" style="opacity: 40%;">
+            search
+        </span>
+        <input type="text" required>
+        <img src="https://1.bp.blogspot.com/-_UgSYeIzz6g/YOlcUieQuVI/AAAAAAAADQg/y-MA8yge2osBIdvAWiD3HK7rLNqVZEQLQCLcBGAsYHQ/s0/mic.PNG" alt="mic image">
+    </div>
+    <div class="searchbtn">
+        <div id="google-search">
+        <span class="google-search" id="googlesearch">Google Search</span>
+        </div>
+        <div id="feeling">
+        <span class="feeling">I'm Feeling Lucky</span>
+        </div>
+    </div>
+    <script type="text/javascript">
+       document.getElementById("googlesearch").onclick = function (){
+           alert("Asli wale me search krlo, Lol...!!!")
+       }
+    </script>
+</body>
+</html>
